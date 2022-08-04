@@ -6,44 +6,40 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WebStudio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./css/styles.css" />
+
+  <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
 <body>
   <!--header-->
-  <header class="header">
-    <div class="container container-header">
-      <a href="/" class="logo logo-header">Web<span class="logo-black">Studio</span></a>
+  <header class="page-header">
+    <div class="page-header__container">
+      <a href="/" class="page-header__logo">Web<span class="page-header__logo--black">Studio</span></a>
       <nav>
-        <ul class="header-list-nav list">
-          <li class="item">
-            <a class="link header-list-link current" href="./index.html">Студия</a>
+        <ul class="page-header__list">
+          <li class="page-header__item">
+            <a class="page-header__link page-header__link--active-blue" href="./index.html">Студия</a>
           </li>
-          <li class="item">
-            <a class="link header-list-link" href="./portfolio.html">Портфолио</a>
+          <li class="page-header__item">
+            <a class="page-header__link" href="./portfolio.html">Портфолио</a>
           </li>
-          <li class="item">
-            <a class="link header-list-link" href="">Контакты</a>
+          <li class="page-header__item">
+            <a class="page-header__link" href="">Контакты</a>
           </li>
         </ul>
       </nav>
-      <ul class="header-list-info list">
-        <li class="item">
-          <a href="mailto:info@devstudio.com" class="link header-list-link">
-            <svg class="icon-info" width="16" height="12">
+      <ul class="page-header__list">
+        <li class="page-header__item">
+          <a href="mailto:info@devstudio.com" class="page-header__link">
+            <svg class="page-header__icon" width="16" height="12">
               <use href="./images/icons.svg#icon-envelope">
 
               </use>
             </svg>info@devstudio.com</a>
         </li>
-        <li class="item">
-          <a href="tel:+380961111111" class="link header-list-link">
-            <svg class="icon-info" width="10" height="16">
+        <li class="page-header__item">
+          <a href="tel:+380961111111" class="page-header__link">
+            <svg class="page-header__icon" width="10" height="16">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>+38 096 111 11 11</a>
         </li>

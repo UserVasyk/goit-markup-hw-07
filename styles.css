@@ -1,9 +1,4 @@
-/*Всі коліри тексту 1-ого макету: 
-1. #212121 (black)
-2. #2196F3 (blue)
-3. #FFFFFF (white)
-4. #757575 (gray)*/
-:root {
+/* :root {
   --brand-color-1: #212121;
   --brand-color-2: #2196f3;
   --primary-bg-color: #ffffff;
@@ -12,81 +7,24 @@
   --paragraph-color: #757575;
   --icons-color: #afb1b8;
   --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 .list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-  margin: 0;
-}
 
-body {
-  color: var(--paragraph-color);
-  font-family: Roboto, sans-serif;
-  font-size: 14px;
-  line-height: 1.75;
-  letter-spacing: 0.03em;
-  margin: 0;
-}
-/* header */
-.logo {
-  color: var(--brand-color-2);
-  text-decoration: none;
-  font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-}
-.logo-header {
-  margin-right: 93px;
-}
-.logo-black {
-  color: #000000;
-}
 .header-link-logo-text,
 .footer-link-logo-text {
   color: var(--brand-color-2);
   font-family: Raleway sans-serif;
 }
 
-.header {
-  padding: 0;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  border-bottom: 1px solid #ececec;
-}
-
 .link {
   text-decoration: none;
   color: currentColor;
 }
-.header-list-link:hover,
-.header-list-link:focus {
-  color: var(--brand-color-2);
-}
-.header-list-nav {
-  color: var(--brand-color-1);
-}
-.header-list-link.current {
-  position: relative;
-  color: var(--brand-color-2);
-}
-.header-list-link {
-  display: inline-flex;
-  align-items: center;
-  padding: 32px 0;
-  transition: color var(--transition);
-}
+
 /* hero */
 .hero {
   background-color: rgba(196, 196, 196, 1);
@@ -241,20 +179,6 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.header-list-nav,
-.header-list-info {
-  display: flex;
-}
-.header-list-nav {
-  gap: 50px;
-}
-.container-header {
-  display: flex;
-  align-items: center;
-}
-.header-list-info .item:not(:last-child) {
-  margin-right: 50px;
-}
 
 .container {
   width: 1200px;
@@ -268,9 +192,7 @@ body {
   padding-bottom: 94px;
   padding-top: 94px;
 }
-img {
-  display: block;
-}
+
 .feature-list .item {
   width: calc((100% - 90px) / 4);
 }
@@ -332,10 +254,6 @@ img {
   margin-bottom: 9px;
 }
 
-.header-list-info {
-  max-height: 80px;
-  margin-left: auto;
-}
 .card-set {
   display: flex;
   gap: 30px;
@@ -366,10 +284,6 @@ img {
 .icon {
   width: 20px;
   height: 20px;
-}
-.icon-info {
-  margin-right: 10px;
-  fill: currentColor;
 }
 
 .icon-feature {
@@ -485,16 +399,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
 }
-.header-list-link.current::after {
-  position: absolute;
-  content: '';
-  width: 100%;
-  height: 4px;
-  background-color: var(--brand-color-2);
-  bottom: -1px;
-  left: 0;
-  border-radius: 2px;
-}
+
 .overflow-container {
   position: relative;
   overflow: hidden;
