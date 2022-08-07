@@ -71,3 +71,33 @@
   gap: 30px;
   flex-wrap: wrap;
 }
+%common-title {
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  color: $brand-color-1;
+}
+%list-social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+%link-social {
+  display: block;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  align-content: center;
+  border-radius: 50%;
+  padding: 12px;
+  fill: $icons-color;
+  transition: fill $transition, background-color $transition;
+  &:hover,
+  &:focus {
+    fill: $primary-bg-color;
+    background-color: $brand-color-2;
+  }
+}

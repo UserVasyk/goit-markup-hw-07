@@ -1,0 +1,62 @@
+.portfolio{
+    @extend %section;
+}
+.portfolio__container{
+    @extend %container;
+}
+.portfolio__title--visually-hidden{
+    @extend %visually-hidden;
+}
+.portfolio__filter-list{
+    @extend %list;
+     display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.portfolio__filter-item{
+    &:not(:last-child) {
+        margin-left: 8px;
+    }
+}
+.portfolio__filter-button{
+    @extend %btn;
+      color: var(--brand-color-1);
+  background-color: var(--tertiary-bg-color);
+  border: none;
+  border-radius: 4px;
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  transition: color var(--transition), background-color var(--transition),
+    box-shadow var(--transition);
+    &:hover, &:focus{
+          color: var(--primary-bg-color);
+  background-color: var(--brand-color-2);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+.portfolio__card-list{
+    @extend %list;
+    @extend %card-set;
+    & .portfolio__item {
+  width: calc((100% - 60px) / 3);
+}
+}
+.portfolio__link{
+    @extend %link;
+    display: flex;
+  flex-direction: column;
+transition: box-shadow var(--transition);
+&:hover, &:focus{box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);}}
+.portfolio__container-overflow{
+     position: relative;
+  overflow: hidden;
+}
+.portfolio__container-scroll
+.portfolio__article-overflow
+.portfolio__box
+.portfolio__title
+.portfolio__paragraph

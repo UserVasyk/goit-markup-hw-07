@@ -276,12 +276,7 @@
   @extend %container;
 }
 .section-about__title {
-  margin-bottom: 50px;
-  text-align: center;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  color: var(--brand-color-1);
+  @extend %common-title;
 }
 .section-about__list {
   @extend %list;
@@ -309,4 +304,96 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+}
+.section-team {
+  background-color: $tertiary-bg-color;
+  @extend %section;
+}
+.section-team__container {
+  @extend %container;
+}
+.section-team__title {
+  @extend %common-title;
+}
+.section-team__list {
+  @extend %list;
+  @extend %card-set;
+  & .section-team__item {
+    width: calc((100% - 90px) / 4);
+  }
+}
+.section-team__box {
+  background: #ffffff;
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  border-radius: 0px 0px 4px 4px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.section-team__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  color: $brand-color-1;
+}
+.section-team__paragraph {
+  font-size: 16px;
+  line-height: 1.18;
+  margin-bottom: 16px;
+}
+.section-team__list-social {
+  @extend %list;
+  @extend %list-social;
+}
+.section-team__link-social {
+  @extend %link-social;
+}
+.section-team__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.section-clients {
+  @extend %section;
+  background-color: $primary-bg-color;
+}
+.section-clients__container {
+  @extend %container;
+}
+.section-clients__title {
+  color: $brand-color-1;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.section-clients__list {
+  @extend %list;
+  @extend %card-set;
+  & .section-clients__item {
+    width: calc((100% - 150px) / 6);
+  }
+}
+
+.section-clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  color: $icons-color;
+  transition: color $transition;
+  &:hover,
+  &:focus {
+    color: $brand-color-2;
+  }
+}
+.section-clients__icon {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
 }
