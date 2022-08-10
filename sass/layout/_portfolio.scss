@@ -1,9 +1,3 @@
-.portfolio {
-  @extend %section;
-}
-.portfolio__container {
-  @extend %container;
-}
 .portfolio__title--visually-hidden {
   @extend %visually-hidden;
 }

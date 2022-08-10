@@ -6,9 +6,6 @@ footer {
     fill: $primary-bg-color;
   }
 }
-.footer__container {
-  @extend %container;
-}
 
 .footer__list {
   @extend %list;
